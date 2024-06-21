@@ -36,4 +36,12 @@ public class GroupAdmin extends User implements AdminActions {
     public String getGroupName() {
         return groupName;
     }
+    @Override
+    public void greetUser() {
+        System.out.println("Hello Groupadmin");
+    }
+    @Override
+    public void commentPost(int postId, String comment){
+        System.out.println(getUsername()+"commentsnon post by groupadmin"+postId+"withcomment:"+comment);
+    }
 }
